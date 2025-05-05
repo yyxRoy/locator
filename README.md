@@ -1,23 +1,23 @@
 
 ---
 
-# 🌐 Flask TraceRoute & 风险分析 API
+# TraceRoute & 风险分析 API
 
 一个基于 Flask 的网络路径分析服务，集成实时 `traceroute` 路由追踪、地理与 ASN 查询、历史缓存记录、异常分析和 Spamhaus 恶意 IP 风险评估功能。
 
 ---
 
-## 📦 项目功能一览
+## 项目功能一览
 
-* ✅ 实时 `traceroute` 路径跟踪，支持流式响应每跳节点；
-* 🌍 基于 MaxMind GeoLite2 提供城市和 ASN 信息；
-* 🧠 支持对比历史记录并检测路径偏移或高延迟；
-* 🚨 检测黑名单 IP（Spamhaus DROP/EDROP），输出风险评分；
-* 🧰 自动更新黑名单 IP，维护 `risky_ips.json` 文件。
+* 实时 `traceroute` 路径跟踪，支持流式响应每跳节点；
+* 基于 MaxMind GeoLite2 提供城市和 ASN 信息；
+* 支持对比历史记录并检测路径偏移或高延迟；
+* 检测黑名单 IP（Spamhaus DROP/EDROP），输出风险评分；
+* 自动更新黑名单 IP，维护 `risky_ips.json` 文件。
 
 ---
 
-## 📁 项目结构
+## 项目结构
 
 ```
 ├── backend.py                  # Flask 后端主程序
@@ -30,7 +30,7 @@
 
 ---
 
-## 🚀 快速启动指南
+## 快速启动指南
 
 ### 1. 安装依赖
 
@@ -93,7 +93,7 @@ python backend.py
 
 ---
 
-## 📡 API 接口说明
+## API 接口说明
 
 ### `GET /api/trace?target=<ip|domain>&cache=true|false`
 
